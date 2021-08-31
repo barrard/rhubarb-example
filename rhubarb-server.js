@@ -3,10 +3,10 @@ var Rhubarb = require("rhubarb-js");
 Rhubarb.init({
 	protocolDefinitionPath: "./public/protocol-definition.json",
 	isServer: true,
-	serverListenPort: 8087,
+	serverListenPort: 3001,
 });
 
-console.log("Server listening to port 8087");
+console.log("Server listening to port 3001");
 
 var userNamesByClientID = new Object();
 var reusableProtocolObject = { userName: "", x: 0, y: 0 };
