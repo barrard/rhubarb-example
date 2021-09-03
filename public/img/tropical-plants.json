@@ -1,0 +1,215 @@
+{
+	"frames": {
+		"Flower_Game_vector.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 175,
+				"h": 172
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 175,
+				"h": 172
+			},
+			"sourceSize": {
+				"w": 175,
+				"h": 172
+			}
+		},
+		"Flower_Game_vector_2.png": {
+			"frame": {
+				"x": 178,
+				"y": 1,
+				"w": 110,
+				"h": 129
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 110,
+				"h": 129
+			},
+			"sourceSize": {
+				"w": 110,
+				"h": 129
+			}
+		},
+		"Grass_Game_Vector.png": {
+			"frame": {
+				"x": 290,
+				"y": 1,
+				"w": 305,
+				"h": 68
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 305,
+				"h": 68
+			},
+			"sourceSize": {
+				"w": 305,
+				"h": 68
+			}
+		},
+		"Leaf_Game_vector.png": {
+			"frame": {
+				"x": 290,
+				"y": 71,
+				"w": 122,
+				"h": 120
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 122,
+				"h": 120
+			},
+			"sourceSize": {
+				"w": 122,
+				"h": 120
+			}
+		},
+		"Leaf_Game_vector_2.png": {
+			"frame": {
+				"x": 414,
+				"y": 71,
+				"w": 142,
+				"h": 402
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 142,
+				"h": 402
+			},
+			"sourceSize": {
+				"w": 142,
+				"h": 402
+			}
+		},
+		"Plant_Game_vector.png": {
+			"frame": {
+				"x": 597,
+				"y": 1,
+				"w": 259,
+				"h": 229
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 259,
+				"h": 229
+			},
+			"sourceSize": {
+				"w": 259,
+				"h": 229
+			}
+		},
+		"Plant_Game_vector_2.png": {
+			"frame": {
+				"x": 1,
+				"y": 232,
+				"w": 232,
+				"h": 205
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 232,
+				"h": 205
+			},
+			"sourceSize": {
+				"w": 232,
+				"h": 205
+			}
+		},
+		"Plant_Game_vector_3.png": {
+			"frame": {
+				"x": 558,
+				"y": 232,
+				"w": 257,
+				"h": 172
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 257,
+				"h": 172
+			},
+			"sourceSize": {
+				"w": 257,
+				"h": 172
+			}
+		},
+		"Tree_Game_Vector.png": {
+			"frame": {
+				"x": 235,
+				"y": 406,
+				"w": 156,
+				"h": 299
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 156,
+				"h": 299
+			},
+			"sourceSize": {
+				"w": 156,
+				"h": 299
+			}
+		},
+		"Tree_Game_Vector_1.png": {
+			"frame": {
+				"x": 558,
+				"y": 406,
+				"w": 256,
+				"h": 318
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 256,
+				"h": 318
+			},
+			"sourceSize": {
+				"w": 256,
+				"h": 318
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "tropical-plants.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 857,
+			"h": 725
+		},
+		"scale": "1"
+	}
+}

@@ -1,0 +1,235 @@
+{
+	"frames": {
+		"lighting-strike-1.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 996,
+				"h": 1342
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 996,
+				"h": 1342
+			},
+			"sourceSize": {
+				"w": 996,
+				"h": 1342
+			}
+		},
+		"lighting-strike-10.png": {
+			"frame": {
+				"x": 999,
+				"y": 1,
+				"w": 605,
+				"h": 1811
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 605,
+				"h": 1811
+			},
+			"sourceSize": {
+				"w": 605,
+				"h": 1811
+			}
+		},
+		"lighting-strike-11.png": {
+			"frame": {
+				"x": 1606,
+				"y": 1,
+				"w": 429,
+				"h": 1811
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 429,
+				"h": 1811
+			},
+			"sourceSize": {
+				"w": 429,
+				"h": 1811
+			}
+		},
+		"lighting-strike-2.png": {
+			"frame": {
+				"x": 2037,
+				"y": 1,
+				"w": 1072,
+				"h": 1342
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1072,
+				"h": 1342
+			},
+			"sourceSize": {
+				"w": 1072,
+				"h": 1342
+			}
+		},
+		"lighting-strike-3.png": {
+			"frame": {
+				"x": 1,
+				"y": 1345,
+				"w": 963,
+				"h": 1342
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 963,
+				"h": 1342
+			},
+			"sourceSize": {
+				"w": 963,
+				"h": 1342
+			}
+		},
+		"lighting-strike-4.png": {
+			"frame": {
+				"x": 2037,
+				"y": 1345,
+				"w": 1006,
+				"h": 1342
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1006,
+				"h": 1342
+			},
+			"sourceSize": {
+				"w": 1006,
+				"h": 1342
+			}
+		},
+		"lighting-strike-5.png": {
+			"frame": {
+				"x": 3111,
+				"y": 1,
+				"w": 1023,
+				"h": 1342
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1023,
+				"h": 1342
+			},
+			"sourceSize": {
+				"w": 1023,
+				"h": 1342
+			}
+		},
+		"lighting-strike-6.png": {
+			"frame": {
+				"x": 3045,
+				"y": 1345,
+				"w": 1491,
+				"h": 1811
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1491,
+				"h": 1811
+			},
+			"sourceSize": {
+				"w": 1491,
+				"h": 1811
+			}
+		},
+		"lighting-strike-7.png": {
+			"frame": {
+				"x": 1,
+				"y": 3158,
+				"w": 940,
+				"h": 1811
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 940,
+				"h": 1811
+			},
+			"sourceSize": {
+				"w": 940,
+				"h": 1811
+			}
+		},
+		"lighting-strike-8.png": {
+			"frame": {
+				"x": 943,
+				"y": 3158,
+				"w": 792,
+				"h": 1811
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 792,
+				"h": 1811
+			},
+			"sourceSize": {
+				"w": 792,
+				"h": 1811
+			}
+		},
+		"lighting-strike-9.png": {
+			"frame": {
+				"x": 1737,
+				"y": 3158,
+				"w": 649,
+				"h": 1811
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 649,
+				"h": 1811
+			},
+			"sourceSize": {
+				"w": 649,
+				"h": 1811
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "thunder-bolt-sheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 4537,
+			"h": 4970
+		},
+		"scale": "1"
+	}
+}

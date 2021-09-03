@@ -1,0 +1,135 @@
+{
+	"frames": {
+		"oranges-0-create.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 32,
+				"h": 42
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 32,
+				"h": 42
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 42
+			}
+		},
+		"oranges-0-group.png": {
+			"frame": {
+				"x": 35,
+				"y": 1,
+				"w": 32,
+				"h": 31
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 32,
+				"h": 31
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 31
+			}
+		},
+		"oranges-0-three.png": {
+			"frame": {
+				"x": 69,
+				"y": 1,
+				"w": 32,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 32,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 20
+			}
+		},
+		"oranges-0-three-light.png": {
+			"frame": {
+				"x": 103,
+				"y": 1,
+				"w": 32,
+				"h": 15
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 32,
+				"h": 15
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 15
+			}
+		},
+		"orangetrees-0-2.png": {
+			"frame": {
+				"x": 35,
+				"y": 34,
+				"w": 123,
+				"h": 128
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 123,
+				"h": 128
+			},
+			"sourceSize": {
+				"w": 123,
+				"h": 128
+			}
+		},
+		"orangetrees-1-1.png": {
+			"frame": {
+				"x": 160,
+				"y": 1,
+				"w": 101,
+				"h": 128
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 101,
+				"h": 128
+			},
+			"sourceSize": {
+				"w": 101,
+				"h": 128
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "orange-tree.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 262,
+			"h": 163
+		},
+		"scale": "1"
+	}
+}
