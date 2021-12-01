@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-// import { Viewport } from 'pixi-viewport'
+import { Viewport } from "pixi-viewport";
 // import gsap from 'gsap'
 
 import Player from "./Player.js";
@@ -29,16 +29,35 @@ export default class GameCanvas {
 
 		this.elRef.current.appendChild(this.app.view);
 
+		// create viewport
+		this.viewport = new Viewport({
+			screenWidth: window.innerWidth,
+			screenHeight: window.innerHeight,
+			worldWidth: 1000,
+			worldHeight: 1000,
+
+			interaction: this.app.renderer.plugins.interaction, // the interaction module is important for wheel to work properly when renderer.view is placed or scaled
+		});
+
+		// add the viewport to the stage
+		this.app.stage.addChild(this.viewport);
+
+		// activate plugins
+		this.viewport.drag().pinch().wheel().decelerate();
+
 		let player1 = new Player();
 		let poly = new PolyShape();
 		const circ = new Circle();
 		const txt = new Text("player1");
+		txt.txt.position.x = 200;
+		txt.txt.position.y = 300;
 
-		// this.app.stage.addChild(player1.sprite, poly.gfx, circ.gfx, txt.txt);
+		// this.viewport.addChild(player1.sprite, poly.gfx, circ.gfx, txt.txt);
 
-		this.loader = new Loader(this.app);
+		this.loader = new Loader(this);
 		this.loader.load();
 
+		this.viewport.addChild(txt.txt);
 		// this.app.ticker((delta) => this.loop(delta));
 	}
 

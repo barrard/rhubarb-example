@@ -1,5 +1,7 @@
 import * as PIXI from "pixi.js";
 
+import Ground from "./ground/index";
+
 export default class Loader {
 	constructor(app) {
 		this.app = app;
@@ -28,6 +30,8 @@ export default class Loader {
 			"Medieval_Building_02normal.png",
 			"Medieval_Building_02snow.png",
 			"red-roof-tile-plaster-house-openWindows.png",
+			"well-first-iso.png",
+			"well-first-iso-2.png",
 		];
 
 		this.loader = PIXI.Loader.shared;
@@ -263,7 +267,7 @@ export default class Loader {
 			animation.position.set(position.x, position.y);
 		}
 
-		this.app.stage.addChild(animation);
+		this.app.viewport.addChild(animation);
 		animation.play();
 		animation.animationSpeed = animationSpeed || 1;
 	}
@@ -271,6 +275,7 @@ export default class Loader {
 		// console.log(resources);
 
 		this.basicGround_etc(resources);
+
 		this.addTreeHouse(resources);
 		this.addOrangeTrees();
 		this.addTropicalPlants();
@@ -301,7 +306,7 @@ export default class Loader {
 			sprite.scale.set(scale.x, scale.y);
 		}
 		sprite.anchor.set(0.5, 0.5);
-		this.app.stage.addChild(sprite);
+		this.app.viewport.addChild(sprite);
 	}
 
 	onLoad(r) {
@@ -309,8 +314,8 @@ export default class Loader {
 		// console.log(r);
 	}
 	onError(e) {
-		console.log("error");
-		console.log(e);
+		// console.log("error");
+		// console.log(e);
 	}
 	onProgress(p) {
 		// console.log("Progress");
@@ -334,81 +339,104 @@ export default class Loader {
 		});
 	}
 	basicGround_etc(resources) {
-		const basic_ground_tiles =
-			resources["./img/basic_ground_tiles.png"].texture;
+		console.log(this.app);
+		debugger;
+		new Ground({
+			renderer: this.app.app.renderer,
+			viewport: this.app.viewport,
+			resources,
+		});
+		// const basic_ground_tiles =
+		// 	resources["./img/basic_ground_tiles.png"].texture;
 
-		//WALLS
-		let { width, height } = basic_ground_tiles;
-		let tileW = width / 8;
-		let tileH = height / 7;
-		let rect1 = new PIXI.Rectangle(0, height - tileH * 1, tileW, tileH);
-		basic_ground_tiles.frame = rect1;
-		const sprit = new PIXI.Sprite(basic_ground_tiles);
-		const sprit2 = new PIXI.Sprite(basic_ground_tiles);
-		// sprit.scale.set(2, 2);
-		sprit.position.set(200, 200);
-		sprit2.position.set(200 + 70, 200 + 35);
+		// //WALLS
+		// let { width, height } = basic_ground_tiles;
+		// let tileW = width / 8;
+		// let tileH = height / 7;
+		// let rect1 = new PIXI.Rectangle(0, height - tileH * 1, tileW, tileH);
+		// basic_ground_tiles.frame = rect1;
+		// const sprit = new PIXI.Sprite(basic_ground_tiles);
+		// const sprit2 = new PIXI.Sprite(basic_ground_tiles);
+		// // sprit.scale.set(2, 2);
+		// sprit.position.set(200, 200);
+		// sprit2.position.set(200 + 70, 200 + 35);
 
-		const cornerTexture = new PIXI.Texture(
-			resources["./img/basic_ground_tiles.png"].texture
-		);
-		const corner = new PIXI.Rectangle(0, height - tileH * 2, tileW, tileH);
-		cornerTexture.frame = corner;
-		const cornerSprite = new PIXI.Sprite(cornerTexture);
-		cornerSprite.position.set(200 + 145, 200 + 65);
+		// const cornerTexture = new PIXI.Texture(
+		// 	resources["./img/basic_ground_tiles.png"].texture
+		// );
+		// const corner = new PIXI.Rectangle(0, height - tileH * 2, tileW, tileH);
+		// cornerTexture.frame = corner;
+		// const cornerSprite = new PIXI.Sprite(cornerTexture);
+		// cornerSprite.position.set(200 + 145, 200 + 65);
 
-		const postTexture = new PIXI.Texture(
-			resources["./img/basic_ground_tiles.png"].texture
-		);
-		const post = new PIXI.Rectangle(tileW * 4, tileH * 5, tileW, tileH);
-		postTexture.frame = post;
-		const postSprite = new PIXI.Sprite(postTexture);
-		postSprite.position.set(80, 150 + 0);
+		// const postTexture = new PIXI.Texture(
+		// 	resources["./img/basic_ground_tiles.png"].texture
+		// );
+		// const post = new PIXI.Rectangle(tileW * 4, tileH * 5, tileW, tileH);
+		// postTexture.frame = post;
+		// const postSprite = new PIXI.Sprite(postTexture);
+		// postSprite.position.set(80, 150 + 0);
 
-		const dirtGroundTexture = new PIXI.Texture(
-			resources["./img/basic_ground_tiles.png"].texture
-		);
-		const dirtGround = new PIXI.Rectangle(
-			tileW * 3,
-			tileH * 0,
-			tileW,
-			tileH
-		);
-		dirtGroundTexture.frame = dirtGround;
+		// const dirtGroundTexture = new PIXI.Texture(
+		// 	resources["./img/basic_ground_tiles.png"].texture
+		// );
+		// const dirtGround = new PIXI.Rectangle(
+		// 	tileW * 3,
+		// 	tileH * 0,
+		// 	tileW,
+		// 	tileH
+		// );
+		// dirtGroundTexture.frame = dirtGround;
 
-		let groundStartX = 1000;
-		let groundStartY = 300;
-		const groundCount = 30;
-		for (let i = 0; i < groundCount; i++) {
-			const dirtGroundSprite = new PIXI.Sprite(dirtGroundTexture);
-			dirtGroundSprite.position.set(groundStartX, groundStartY);
-			this.app.stage.addChild(dirtGroundSprite);
+		// let groundStartX = 0;
+		// let groundStartY = 0;
+		// let rows = 30;
+		// const groundCount = 30;
+		// for (let r = 0; r < rows; r++) {
+		// 	for (let i = 0; i < groundCount; i++) {
+		// 		const dirtGroundSprite = new PIXI.Sprite(dirtGroundTexture);
+		// 		dirtGroundSprite.position.set(groundStartX, groundStartY);
+		// 		this.app.viewport.addChild(dirtGroundSprite);
 
-			groundStartX += 60;
-			groundStartY += 30;
-		}
+		// 		groundStartX += 60;
+		// 		groundStartY += 30;
+		// 	}
 
-		groundStartX = 900;
-		groundStartY = 300;
+		// 	groundStartX = 0;
+		// 	groundStartY = r * 50 + 50;
+		// }
 
-		for (let i = 0; i < groundCount; i++) {
-			const dirtGroundSprite = new PIXI.Sprite(dirtGroundTexture);
-			dirtGroundSprite.position.set(groundStartX, groundStartY);
-			this.app.stage.addChild(dirtGroundSprite);
+		// // for (let i = 0; i < groundCount; i++) {
+		// // 	const dirtGroundSprite = new PIXI.Sprite(dirtGroundTexture);
+		// // 	dirtGroundSprite.position.set(groundStartX, groundStartY);
+		// // 	this.app.viewport.addChild(dirtGroundSprite);
 
-			groundStartX += 60;
-			groundStartY += 30;
-		}
-		// const dirtGroundSprite2 = new PIXI.Sprite(dirtGroundTexture);
-		// dirtGroundSprite2.position.set(140, 330);
+		// // 	groundStartX += 60;
+		// // 	groundStartY += 30;
+		// // }
+		// // const dirtGroundSprite2 = new PIXI.Sprite(dirtGroundTexture);
+		// // dirtGroundSprite2.position.set(140, 330);
 
-		// const dirtGroundSprite3 = new PIXI.Sprite(dirtGroundTexture);
-		// dirtGroundSprite3.position.set(200, 360);
+		// // const dirtGroundSprite3 = new PIXI.Sprite(dirtGroundTexture);
+		// // dirtGroundSprite3.position.set(200, 360);
 
-		this.app.stage.addChild(sprit, sprit2, cornerSprite, postSprite);
+		// this.app.viewport.addChild(sprit, sprit2, cornerSprite, postSprite);
 	}
 
 	addTreeHouse(resources) {
+		this.addSpriteImg({
+			file: "./img/well-first-iso-2.png",
+			resources,
+			position: { x: 1000, y: 600 },
+			scale: { x: 0.15, y: 0.15 },
+		});
+		this.addSpriteImg({
+			file: "./img/well-first-iso.png",
+			resources,
+			position: { x: 1400, y: 600 },
+			scale: { x: 0.15, y: 0.15 },
+		});
+
 		this.addSpriteImg({
 			file: "./img/red-roof-tile-plaster-house-openWindows.png",
 			resources,
